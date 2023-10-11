@@ -97,9 +97,34 @@
         <section id="newsletter">
             <div class="container">
               <h1>Subscribe To Our Newsletter</h1>
-              <form>
-                <input type="email" placeholder="Enter Email..." required>
-                <button type="submit" class="button_1">Subscribe</button>
+              <form type="email" action="Ademubaraq7@gmail.com" method="post" enctype="text/plain">
+                <label>EMAIL:</label>
+                <input type="Email" name="yourEmail" value="" required><br>
+                <button id="sendEmailButton">Subscribe</button>
+
+    <script>
+        document.getElementById("sendEmailButton").addEventListener("click", function() {
+            // Replace 'youremail@example.com' with the recipient's email address.
+            var recipientEmail = "youremail@example.com";
+            
+            // Replace 'Email Subject' with the subject of your email.
+            var subject = "Email Subject";
+            
+            // Replace 'Email Body' with the body of your email.
+            var body = "Email Body";
+            
+            // Construct the mailto URL.
+            var mailtoURL = "mailto:" + recipientEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+            
+            // Open the default email client with the mailto URL.
+            window.location.href = mailtoURL;
+
+            // Add a click event listener to the button
+            button.addEventListener("click", function() {
+                    alert("item successfully added to cart!");
+                });
+        });
+    </script>
               </form>
             </div>
           </section>
