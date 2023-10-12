@@ -16,9 +16,12 @@ body{
     overflow:hidden;
   }
   
-  ul{
-    margin:0;
-    padding:0;
+  p {
+    text-align: center;
+  }
+
+  hr {
+    color: blue;
   }
   
   .button_1{
@@ -41,22 +44,40 @@ body{
   .highlight {
     color: black;
   }
+
+  
   
   /* Header **/
   header{
-    background:gray;
+    background:aliceblue;
     color:green;
     padding-top:30px;
     min-height:70px;
     border-bottom:blue 3px solid;
   }
+
+  .veat {
+    text-align: center;
+  }
   
+  .par {
+    text-decoration-line: underline;
+    font-style:oblique;
+  }
   header a{
-    color:#ffffff;
+    color:#35424a;
     text-decoration:none;
     text-transform: uppercase;
     font-size:16px;
     cursor: pointer;
+    box-sizing:border-box;
+    width: auto;
+    height: auto;
+    border: 2px solid gray;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 100px;
+      
   }
   
   header li{
@@ -87,6 +108,8 @@ body{
     color:blue;
     font-weight:bold;
   }
+
+
   
   /* Showcase */
   #showcase{
