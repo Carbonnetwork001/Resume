@@ -18,6 +18,13 @@ body{
   
   p {
     text-align: center;
+    
+  }
+
+  .bro {
+    float: right;
+    display: inline;
+    float: right;
   }
 
   hr {
